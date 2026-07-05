@@ -50,7 +50,7 @@ class GsUsb:
         :param flags: GS_CAN_MODE_LISTEN_ONLY, GS_CAN_MODE_HW_TIMESTAMP, etc.
         """
         # Reset to support restart multiple times
-        self.gs_usb.reset()
+        #self.gs_usb.reset()
 
         # Detach usb from kernel driver in Linux/Unix system to perform IO
         if "windows" not in platform.system().lower() and self.gs_usb.is_kernel_driver_active(
